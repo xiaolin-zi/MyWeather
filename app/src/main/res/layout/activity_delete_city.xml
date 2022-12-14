@@ -16,13 +16,13 @@
             android:id="@+id/delete_iv_error"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@mipmap/icon_error"
+            android:src="@drawable/no"
             android:layout_marginLeft="5dp"/>
         <ImageView
             android:id="@+id/delete_iv_right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@mipmap/icon_right"
+            android:src="@drawable/yes"
             android:layout_alignParentRight="true"
             android:layout_marginRight="5dp"/>
         <TextView

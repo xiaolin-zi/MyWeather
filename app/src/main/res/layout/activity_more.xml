@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         <ImageView
             android:id="@+id/more_iv_back"
             android:layout_width="wrap_content"
-            android:src="@mipmap/icon_back"
+            android:src="@drawable/back"
             android:layout_marginLeft="10dp"
             android:layout_height="match_parent" />
         <TextView
@@ -22,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="个性设置"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
     <ImageView
@@ -37,8 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/more_line1"
-        android:drawableLeft="@mipmap/more_bg"
-        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/bizhi"
+        android:drawablePadding="50dp"
         android:padding="10dp"
         android:text="改变壁纸"
         android:textSize="18sp" />
@@ -124,9 +123,9 @@
         android:layout_height="wrap_content"
         android:text="当前版本"
         android:textSize="18sp"
-        android:drawableLeft="@mipmap/more_version"
+        android:drawableLeft="@drawable/version"
         android:layout_below="@id/more_rg"
-        android:drawablePadding="20dp"
+        android:drawablePadding="50dp"
         android:padding="10dp"/>
     <ImageView
         android:id="@+id/more_line3"
@@ -141,9 +140,9 @@
         android:layout_height="wrap_content"
         android:text="清除缓存"
         android:textSize="18sp"
-        android:drawableLeft="@mipmap/more_cache"
+        android:drawableLeft="@drawable/clear"
         android:layout_below="@id/more_line3"
-        android:drawablePadding="20dp"
+        android:drawablePadding="50dp"
         android:padding="10dp"/>
     <ImageView
         android:id="@+id/more_line4"
@@ -157,8 +156,77 @@
         android:layout_height="wrap_content"
         android:text="分享软件"
         android:textSize="18sp"
-        android:drawableLeft="@mipmap/more_share"
+        android:drawableLeft="@drawable/share"
         android:layout_below="@id/more_line4"
-        android:drawablePadding="20dp"
+        android:drawablePadding="50dp"
         android:padding="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/more_tv_share"
+        android:background="#dcdcdc"
+        android:id="@+id/more_line5"/>
+
+
+    <TextView
+        android:singleLine="false"
+        android:id="@+id/project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="项目地址\nhttps://github.com/linXiao01/MyWeather"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/project"
+        android:layout_below="@id/more_line5"
+        android:drawablePadding="50dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/more_line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/project"
+        android:background="#DCDCDC"/>
+
+
+
+
+    <TextView
+        android:singleLine="false"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="邮箱\n1849569695@qq.com"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/email"
+        android:layout_below="@id/more_line6"
+        android:drawablePadding="50dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/more_line8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/email"
+        android:background="#DCDCDC"/>
+
+    <TextView
+        android:singleLine="false"
+        android:id="@+id/github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="github\nhttps://github.com/linXiao01/"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/github"
+        android:layout_below="@id/more_line8"
+        android:drawablePadding="50dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/more_line9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/github"
+        android:background="#DCDCDC"/>
+
 </RelativeLayout>

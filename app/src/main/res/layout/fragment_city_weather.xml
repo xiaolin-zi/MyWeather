@@ -103,7 +103,7 @@
                     android:id="@+id/frag_index_tv_rays"
                     style="@style/indextext"
                     android:text="紫外线指数"
-                    android:drawableBottom="@mipmap/icon_light"/>
+                    android:drawableBottom="@drawable/sun"/>
 
                 <ImageView
                     android:layout_width="1dp"
@@ -114,7 +114,7 @@
                     android:id="@+id/frag_index_tv_sport"
                     style="@style/indextext"
                     android:text="减肥指数"
-                    android:drawableBottom="@mipmap/icon_sport"/>
+                    android:drawableBottom="@drawable/sport"/>
 
 
 
@@ -127,7 +127,7 @@
                     android:id="@+id/frag_index_tv_cold"
                     style="@style/indextext"
                     android:text="血糖指数"
-                    android:drawableBottom="@mipmap/icon_ganmao"/>
+                    android:drawableBottom="@drawable/xt"/>
 
             </LinearLayout>
 
@@ -145,7 +145,7 @@
                     android:id="@+id/frag_index_tv_dress"
                     style="@style/indextext"
                     android:text="穿衣指数"
-                    android:drawableBottom="@mipmap/icon_cloth"/>
+                    android:drawableBottom="@drawable/clothes"/>
 
                 <ImageView
                     android:layout_width="1dp"
@@ -156,7 +156,7 @@
                     android:id="@+id/frag_index_tv_washcar"
                     style="@style/indextext"
                     android:text="洗车指数"
-                    android:drawableBottom="@mipmap/icon_car"/>
+                    android:drawableBottom="@drawable/car"/>
 
                 <ImageView
                     android:layout_width="1dp"
@@ -167,7 +167,7 @@
                     style="@style/indextext"
                     android:text="空气污染指数"
                     android:drawablePadding="10dp"
-                    android:drawableBottom="@mipmap/icon_air"/>
+                    android:drawableBottom="@drawable/air"/>
             </LinearLayout>
         </LinearLayout>
 

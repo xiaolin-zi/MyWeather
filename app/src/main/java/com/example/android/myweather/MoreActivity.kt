@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -22,6 +23,8 @@ class MoreActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var exbgRg:RadioGroup
     lateinit var backIv:ImageView
     lateinit var pref: SharedPreferences
+    lateinit var project:TextView
+    lateinit var github:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_more)
@@ -31,6 +34,10 @@ class MoreActivity : AppCompatActivity(),View.OnClickListener {
         shareTv = findViewById(R.id.more_tv_share);
         backIv = findViewById(R.id.more_iv_back);
         exbgRg = findViewById(R.id.more_rg);
+        project = findViewById<TextView>(R.id.project)
+        github = findViewById<TextView>(R.id.github)
+        project.setOnClickListener(this)
+        github.setOnClickListener(this)
         bgTv.setOnClickListener(this);
         cacheTv.setOnClickListener(this);
         shareTv.setOnClickListener(this);
@@ -144,6 +151,17 @@ class MoreActivity : AppCompatActivity(),View.OnClickListener {
             R.id.more_iv_back->{
                 //返回
                 finish()
+            }
+            R.id.project->{
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://github.com/linXiao01/JieYang")
+                startActivity(intent)
+            }
+
+            R.id.github->{
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("https://github.com/linXiao01/")
+                startActivity(intent)
             }
         }
     }

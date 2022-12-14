@@ -12,14 +12,14 @@
         <ImageView
             android:id="@+id/city_iv_back"
             android:layout_marginLeft="10dp"
-            android:src="@mipmap/icon_back"
+            android:src="@drawable/back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"/>
         <ImageView
             android:id="@+id/city_iv_delete"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@mipmap/icon_write"
+            android:src="@drawable/editor"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"/>
         <TextView
@@ -55,8 +55,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        android:background="#87CEEB"
         android:padding="3dp"
-        android:src="@mipmap/icon_add" />
+        android:src="@drawable/city" />
 
 </RelativeLayout>
